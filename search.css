@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    height:300px;
+    width:400px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: grid;
+    align-items: center;
+}
+.container > .contains{
+    display:grid;
+    justify-content: center;
+}
+
+label{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: serif;
+}
+input{
+    padding:3px;
+    border-color: green;
+    border-width: 5px;
+    color:rgb(1, 45, 16)
+}
+button{
+    background-color: rgb(41, 241, 41);
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
