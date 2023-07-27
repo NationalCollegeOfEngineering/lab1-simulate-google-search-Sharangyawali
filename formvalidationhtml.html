@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+        div{
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            border: 2px solid;
+            margin: 2px;
+        }
+        button{
+            margin:4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <form method="get">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" id="name" minlength="4" maxlength="14">
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" name="password" id="password" minlength="6">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>
